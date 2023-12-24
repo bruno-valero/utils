@@ -1,5 +1,5 @@
 export default function cpfMask(cpf:string):string {
-  cpf = cpf.replace(/ /ig, '').replace(/\D+/ig, '');
+  cpf = cpf.replaceAll(' ', '').replaceAll(/\D+/g, '');
   const first = cpf.slice(0,3);
   const second = cpf.slice(3,6);
   const third = cpf.slice(6,9);

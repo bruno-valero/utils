@@ -1,5 +1,5 @@
 export default function rgMask(cpf:string):string {
-  cpf = cpf.replace(/ /ig, '');
+  cpf = cpf.replaceAll(' ', '');
   const first = cpf.slice(0,2);
   const second = cpf.slice(2,5);
   const third = cpf.slice(5,8);
