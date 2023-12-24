@@ -1,5 +1,5 @@
 export default function dateMask(date:string):string {
-  date = date.replaceAll(' ', '').replaceAll('/', '');
+  date = date.replace(/ /ig, '').replace(/\//ig, '');
   const first = date.slice(0,2);
   const second = date.slice(2,4);
   const third = date.slice(4,6);

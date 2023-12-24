@@ -1,4 +1,4 @@
-import { Obj } from '@/common.types';
+import { Obj } from '../../common.types';
 
 export default function isObjectKeysNullish({ obj }:IsObjectKeysNullishPropstype):boolean {
   const keysVerify = Object.keys(obj).filter((key:string) => {
